@@ -1,0 +1,65 @@
+recyclerview is scrollable container for large data sets
+
+Daata 
+RecyclerView scrolling list for list items 
+
+layout manager handles ui components in a view 
+Recyclerview.layoutmanager
+    used to position view items inside a recyclerView
+    reuse view items no longer visible 
+
+    built-in layout managers
+        (list layout)
+
+
+
+
+adapter connects data to recyclerView 
+RecyclerView.adapter
+
+    helps incompativle interfaces work together 
+        example takes data from database cursor and preparates strings to put into view
+        MIDDLE MAN BETWEEN DATA AND View
+
+        MANAGES CREATING, UPDATING, ADDING DELETING VIEW ITEMS AS UNDERLYING DATA CHANGES
+
+
+viewHolder has view information for displaying one item
+    USED BY THE ADPTER TO PREPARE ONE VIEW WITH DATA FOR ONE LIST ITEM 
+    LAYOUT SPECIFIED IN AN XML RESOURCE FILE 
+    CAN HAVE CLICKABLE ELEMENTS
+    IS PLACED BY THE LAYOUT MANAGER
+
+RecyclerView.ViewHolder
+
+
+
+
+verisoni 
+v1 show name of the flower 
+v2 
+v3 
+v4 
+
+
+V2
+1 creare la seconda activity (DetailActivity) con UI definita in maniera dichiarativa (ricorda manifest)
+
+2 chiamare DetailActivity da MainActivity senza passare parametri
+    Problema: dove modificare FlowerAdapter?
+    Suggerimento: avere un unico "onClickListener" per l'adapter
+    Suggerimento: impostare il listener una volta per ViewHolder
+
+3 Passare il nome del fiore a DetailActivity all'interno dell'intent 
+    suggerimento:passare il nome del fiore come stringa
+    Suggerimento: inserire il nome del fiore nell'intent come extra
+    Suggerimento una activity può leggere l'intent con cui è stata chiamata (metodo get Intent() che poi diventa intent ....)
+
+v3
+1 creare l'interfaccia utente 
+  Una activity : MainActivity
+  Due Fragment : ListFragment e DetailFragment 
+  tre file xml per l'UI : activity.XML , Fragment_list.xml , fragment_detail.xml
+ fare cut&paste da v2 dove possibile 
+ Fare riferimento a codice di SecretMessage
+
