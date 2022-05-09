@@ -63,3 +63,13 @@ v3
  fare cut&paste da v2 dove possibile 
  Fare riferimento a codice di SecretMessage
 
+ 2 modificare i buil.grandle per includere Navigation e SafeArgs
+
+ 3 completare nav_graph.xml
+
+ 4 modificare FlowerAdapeter per avviare DetailFragment Simile a v2 ma si usa una action anzichè un Intent e il parametro è passato con Safe Args 
+  fare riferimento al codice sorgente di v2 (listener)
+  fare riferimento al codice di secretMessage( action , SafeArgs)
+  NOTA BENE : va completato nav_graph :(Rif SecretMessage)
+5 modificare DetailFragmentper visualizzare il parametro ricevuto
+

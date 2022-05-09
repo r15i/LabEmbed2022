@@ -16,19 +16,14 @@
 
 package com.example.recyclersample
 
-import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.ListFragment
 
-class FlowerAdapter(private val flowerList: Array<String>) :
-    RecyclerView.Adapter<FlowerAdapter.FlowerViewHolder>() {
+class FlowerAdapter(private val flowerList: Array<String>) : RecyclerView.Adapter<FlowerAdapter.FlowerViewHolder>() {
 
     // Describes an item view and its place within the RecyclerView
     class FlowerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
